@@ -57,3 +57,92 @@ print(f'My name is {myName}. Hi {friendName}')
 list = [1, 2, 3, 4, 5, 6]
 # 3つとばし
 print(list[::3])  # [1, 4]
+
+chose_from_two = ('A', 'B', 'C')
+
+answer =[]
+answer.append('A')
+answer.append('B')
+
+print(answer)
+
+# 辞書型
+d = {
+  'x': 10,
+  'y': 20,
+}
+print(d)
+
+d['x'] = 'xxxx'
+print(d)
+
+print(dict(a=10, b=123))
+
+print(dict([('a', 'aaa'), ('b', 'bbbb')]))
+
+# 集合
+s = {1, 2, 3, 4, 5}
+
+s.add(6)
+print(s)
+
+s.remove(3)
+print(s)
+
+s.clear()
+print(s)
+print(type(s))
+
+a = {}
+print(type(a))
+
+my_frineds = { 'a', 'b', 'c' }
+other_frineds = { 'c' }
+
+print(my_frineds & other_frineds)
+
+f = ['apple', 'banana', 'apple']
+kind = set(f)
+print(kind)
+
+# if
+x = [1, 3]
+y = 1
+
+if y in x:
+  print('in')
+
+if "d" not in x:
+  print('not in')
+
+is_ok = True
+if not is_ok:
+  print('not is_ok')
+else:
+  print('is_ok')
+
+# 基本的にisはNoneを判定するときに使う
+is_empty = None
+if is_empty is None:
+  print('none')
+
+# while
+count = 0
+while count <= 5:
+  print(count)
+  count += 1
+
+print('##########')
+
+count2 = 0
+while count2 < 5:
+  if count2 >= 5:
+    print(count2)
+    break
+
+  if count2 == 3:
+    count2 += 1
+    continue
+
+  print(count2)
+  count2 += 1
